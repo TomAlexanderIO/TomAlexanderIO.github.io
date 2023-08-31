@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on Example Site</title>
-        <link>https://example.com/tags/</link>
-        <description>Recent content in Tags on Example Site</description>
+        <title>Tags on Tom Alexander</title>
+        <link>https://tomalexanderio.github.io/tags/</link>
+        <description>Recent content in Tags on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
+        <language>nl</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexanderio.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>markdown</title>
-        <link>https://example.com/tags/markdown/</link>
+        <link>https://tomalexanderio.github.io/tags/markdown/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/tags/markdown/</guid>
+        <guid>https://tomalexanderio.github.io/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>tag with whitespaces</title>
-        <link>https://example.com/tags/tag-with-whitespaces/</link>
+        <link>https://tomalexanderio.github.io/tags/tag-with-whitespaces/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/tags/tag-with-whitespaces/</guid>
+        <guid>https://tomalexanderio.github.io/tags/tag-with-whitespaces/</guid>
         <description></description>
         </item>
         <item>
         <title>text</title>
-        <link>https://example.com/tags/text/</link>
+        <link>https://tomalexanderio.github.io/tags/text/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/tags/text/</guid>
+        <guid>https://tomalexanderio.github.io/tags/text/</guid>
         <description></description>
         </item>
         

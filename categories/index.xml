@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on Example Site</title>
-        <link>https://example.com/categories/</link>
-        <description>Recent content in Categories on Example Site</description>
+        <title>Categories on Tom Alexander</title>
+        <link>https://tomalexanderio.github.io/categories/</link>
+        <description>Recent content in Categories on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
+        <language>nl</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexanderio.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Test</title>
-        <link>https://example.com/categories/test/</link>
+        <link>https://tomalexanderio.github.io/categories/test/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/categories/test/</guid>
+        <guid>https://tomalexanderio.github.io/categories/test/</guid>
         <description></description>
         </item>
         <item>
         <title>Test with whitespaces</title>
-        <link>https://example.com/categories/test-with-whitespaces/</link>
+        <link>https://tomalexanderio.github.io/categories/test-with-whitespaces/</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/categories/test-with-whitespaces/</guid>
+        <guid>https://tomalexanderio.github.io/categories/test-with-whitespaces/</guid>
         <description></description>
         </item>
         <item>
-        <title>Test</title>
-        <link>https://example.com/categories/webdev/</link>
+        <title>Weddev test</title>
+        <link>https://tomalexanderio.github.io/categories/webdev/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/categories/webdev/</guid>
-        <description>&lt;img src="https://example.com/categories/webdev/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://tomalexanderio.github.io/categories/webdev/</guid>
+        <description>&lt;img src="https://tomalexanderio.github.io/categories/webdev/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Weddev test" /&gt;</description>
         </item>
         
     </channel>
