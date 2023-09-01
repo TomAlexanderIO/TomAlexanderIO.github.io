@@ -5,32 +5,7 @@
         <link>https://tomalexanderio.github.io/tags/</link>
         <description>Recent content in Tags on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>nl</language>
-        <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexanderio.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>markdown</title>
-        <link>https://tomalexanderio.github.io/tags/markdown/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://tomalexanderio.github.io/tags/markdown/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>tag with whitespaces</title>
-        <link>https://tomalexanderio.github.io/tags/tag-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://tomalexanderio.github.io/tags/tag-with-whitespaces/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>text</title>
-        <link>https://tomalexanderio.github.io/tags/text/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://tomalexanderio.github.io/tags/text/</guid>
-        <description></description>
-        </item>
-        
+        <language>en</language>
+        <copyright>Tom Alexander</copyright><atom:link href="https://tomalexanderio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

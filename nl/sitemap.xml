@@ -2,99 +2,128 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tomalexanderio.github.io/</loc>
+    <loc>https://tomalexanderio.github.io/nl/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomalexanderio.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
                 href="https://tomalexanderio.github.io/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/"
+                />
   </url><url>
-    <loc>https://tomalexanderio.github.io/archives/</loc>
+    <loc>https://tomalexanderio.github.io/nl/archief/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomalexanderio.github.io/en/page/"
+                href="https://tomalexanderio.github.io/archive/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/archief/"
+                />
+  </url><url>
+    <loc>https://tomalexanderio.github.io/nl/page/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://tomalexanderio.github.io/page/"
                 />
-  </url><url>
-    <loc>https://tomalexanderio.github.io/categories/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexanderio.github.io/en/categories/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://tomalexanderio.github.io/categories/"
+                href="https://tomalexanderio.github.io/nl/page/"
                 />
   </url><url>
-    <loc>https://tomalexanderio.github.io/tags/markdown/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/p/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/post/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/tags/tag-with-whitespaces/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/tags/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexanderio.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexanderio.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://tomalexanderio.github.io/categories/test/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/categories/test-with-whitespaces/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tomalexanderio.github.io/over-mij/</loc>
+    <loc>https://tomalexanderio.github.io/nl/over-mij/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tomalexanderio.github.io/en/about/"
+                href="https://tomalexanderio.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://tomalexanderio.github.io/over-mij/"
+                href="https://tomalexanderio.github.io/nl/over-mij/"
                 />
   </url><url>
-    <loc>https://tomalexanderio.github.io/links/</loc>
+    <loc>https://tomalexanderio.github.io/nl/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexanderio.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/categories/"
+                />
   </url><url>
-    <loc>https://tomalexanderio.github.io/search/</loc>
+    <loc>https://tomalexanderio.github.io/nl/links/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexanderio.github.io/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/links/"
+                />
   </url><url>
-    <loc>https://tomalexanderio.github.io/categories/webdev/</loc>
+    <loc>https://tomalexanderio.github.io/nl/categories/personal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexanderio.github.io/categories/personal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/categories/personal/"
+                />
+  </url><url>
+    <loc>https://tomalexanderio.github.io/nl/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexanderio.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/tags/"
+                />
+  </url><url>
+    <loc>https://tomalexanderio.github.io/nl/categories/webdev/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexanderio.github.io/categories/webdev/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/categories/webdev/"
+                />
+  </url><url>
+    <loc>https://tomalexanderio.github.io/nl/zoeken/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexanderio.github.io/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexanderio.github.io/nl/zoeken/"
+                />
   </url>
 </urlset>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Tom Alexander</title>
+        <link>https://tomalexanderio.github.io/nl/page/</link>
+        <description>Recent content in Pages on Tom Alexander</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>nl</language>
+        <copyright>Tom Alexander</copyright>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexanderio.github.io/nl/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archief</title>
+        <link>https://tomalexanderio.github.io/nl/archief/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexanderio.github.io/nl/archief/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Over mij</title>
+        <link>https://tomalexanderio.github.io/nl/over-mij/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexanderio.github.io/nl/over-mij/</guid>
+        <description>&lt;p&gt;Lorum Ipsum&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://tomalexanderio.github.io/nl/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexanderio.github.io/nl/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Zoeken</title>
+        <link>https://tomalexanderio.github.io/nl/zoeken/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexanderio.github.io/nl/zoeken/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
