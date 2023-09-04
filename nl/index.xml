@@ -7,18 +7,10 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>nl</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/nl/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Archief</title>
-        <link>https://tomalexander.io/nl/archief/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://tomalexander.io/nl/archief/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/nl/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Over mij</title>
         <link>https://tomalexander.io/nl/over-mij/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
         
         <guid>https://tomalexander.io/nl/over-mij/</guid>
         <description>&lt;p&gt;Ik ben Tom Alexander Bulté, ben een Online Marketing specialist, woonachtig is Zwolle. Met 5 jaar ervaring in online marketing ben ik gefocust op new business lead generatie in de IT-sector.&lt;/p&gt;
@@ -52,12 +44,21 @@
 </description>
         </item>
         <item>
+        <title>Archief</title>
+        <link>https://tomalexander.io/nl/archief/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexander.io/nl/archief/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Links</title>
         <link>https://tomalexander.io/nl/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://tomalexander.io/nl/links/</guid>
-        <description></description>
+        <description>&lt;p&gt;Ontdek op welke website’s ik regelmatige te vinden ben en software waar ik regelmatige gebruik van maak.&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Zoeken</title>
