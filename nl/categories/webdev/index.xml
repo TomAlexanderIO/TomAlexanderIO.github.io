@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>WedDev on Tom Alexander</title>
-        <link>https://tomalexanderio.github.io/nl/categories/webdev/</link>
+        <link>https://tomalexander.io/nl/categories/webdev/</link>
         <description>Recent content in WedDev on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>nl</language>
-        <copyright>Tom Alexander</copyright><atom:link href="https://tomalexanderio.github.io/nl/categories/webdev/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Tom Alexander</copyright><atom:link href="https://tomalexander.io/nl/categories/webdev/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>

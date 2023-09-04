@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Tom Alexander</title>
-        <link>https://tomalexanderio.github.io/tags/</link>
+        <link>https://tomalexander.io/tags/</link>
         <description>Recent content in Tags on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>Tom Alexander</copyright><atom:link href="https://tomalexanderio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Tom Alexander</copyright><atom:link href="https://tomalexander.io/tags/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
