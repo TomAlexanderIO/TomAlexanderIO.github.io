@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tomalexander.io/</loc>
-    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -13,6 +13,58 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tomalexander.io/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/categories/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/categories/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/p/hello-world/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/p/hallo-wereld/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/p/hello-world/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/categories/personal/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/categories/personal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/categories/personal/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/post/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/post/"
                 />
   </url><url>
     <loc>https://tomalexander.io/about-me/</loc>
@@ -54,18 +106,6 @@
                 href="https://tomalexander.io/archive/"
                 />
   </url><url>
-    <loc>https://tomalexander.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/categories/"
-                />
-  </url><url>
     <loc>https://tomalexander.io/links/</loc>
     <xhtml:link
                 rel="alternate"
@@ -76,18 +116,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tomalexander.io/links/"
-                />
-  </url><url>
-    <loc>https://tomalexander.io/categories/personal/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/categories/personal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/categories/personal/"
                 />
   </url><url>
     <loc>https://tomalexander.io/search/</loc>
