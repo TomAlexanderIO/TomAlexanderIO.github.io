@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Personal on Tom Alexander</title>
-        <link>https://tomalexander.io/categories/personal/</link>
+        <link>https://tomalexander.io/tags/personal/</link>
         <description>Recent content in Personal on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/categories/personal/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/tags/personal/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MY FIRST POST.</title>
         <link>https://tomalexander.io/p/hello-world/</link>
         <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>

@@ -41,6 +41,9 @@
                 href="https://tomalexander.io/nl/p/hallo-wereld/"
                 />
   </url><url>
+    <loc>https://tomalexander.io/nl/tags/persoonlijk/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tomalexander.io/nl/categories/personal/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -65,6 +68,19 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://tomalexander.io/nl/post/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/tags/</loc>
+    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/tags/"
                 />
   </url><url>
     <loc>https://tomalexander.io/nl/over-mij/</loc>
@@ -106,6 +122,18 @@
                 href="https://tomalexander.io/nl/archief/"
                 />
   </url><url>
+    <loc>https://tomalexander.io/nl/categories/development/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/categories/development/"
+                />
+  </url><url>
     <loc>https://tomalexander.io/nl/links/</loc>
     <xhtml:link
                 rel="alternate"
@@ -116,30 +144,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://tomalexander.io/nl/links/"
-                />
-  </url><url>
-    <loc>https://tomalexander.io/nl/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/tags/"
-                />
-  </url><url>
-    <loc>https://tomalexander.io/nl/categories/webdev/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/categories/webdev/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/categories/webdev/"
                 />
   </url><url>
     <loc>https://tomalexander.io/nl/zoeken/</loc>
