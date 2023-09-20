@@ -7,7 +7,392 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Install Hugo website and host for free on GitHub-pages</title>
+        <link>https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/</link>
+        <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/</guid>
+        <description>&lt;img src="https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/install-hugo-and-host-on-github.png" alt="Featured image of post Install Hugo website and host for free on GitHub-pages" /&gt;&lt;h1 id=&#34;build-easily-and-quickly-your-own-hugo-website-on-macos-and-host-it-for-free-on-github-pages&#34;&gt;Build easily and quickly your own HUGO website on macOS and host it for free on GitHub pages.&lt;/h1&gt;
+&lt;p&gt;Hugo is an open-source website generator for static websites. Often, for a small website, you do not need a complex infrastructure with a front-end, back-end, and database (e.g., WordPress).&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;rsquo;ll take you through how I installed Hugo on macOS and published it for free on GitHub. Want to know more about Hugo and other installation options? Then visit &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/installation/&lt;/a&gt;. In addition to installing Hugo, I will also tell you how to install the Hugo Theme Stack by Jimmy Cai.&lt;/p&gt;
+&lt;h2 id=&#34;lets-go&#34;&gt;Let&amp;rsquo;s Go&lt;/h2&gt;
+&lt;p&gt;Installing Hugo on macOS is done with Homebrew. This is a package manager for MacOS or Linux. Want to know more about Homebrew? Visit &lt;a class=&#34;link&#34; href=&#34;https://brew.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://brew.sh/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step-1-create-two-github-repositories&#34;&gt;STEP 1: Create two GitHub repositories.&lt;/h2&gt;
+&lt;p&gt;Go to your GitHub account and create two repositories there. If you don&amp;rsquo;t have an account on GitHub yet, make one on &lt;a class=&#34;link&#34; href=&#34;http://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;create-1st-repository&#34;&gt;Create 1st Repository&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Right at the top of GitHub, click on your profile image.&lt;/li&gt;
+&lt;li&gt;Go to &amp;ldquo;Your repositories&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;New&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Create your first repository and name it. Make your repository &amp;ldquo;Public&amp;rdquo;. You do not need a &amp;ldquo;README file&amp;rdquo;.
+&lt;img src=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/first-repository.png&#34;
+	width=&#34;702&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/first-repository_hu87fc2e1b60b8a5732c7f79072f2dabb4_35237_480x0_resize_box_3.png 480w, https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/first-repository_hu87fc2e1b60b8a5732c7f79072f2dabb4_35237_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;First Repository config&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;
+&lt;em&gt;This first repository will contain all your Hugo files to maintain the website.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Create repository”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;create-2nd-repository&#34;&gt;Create 2nd Repository&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Right at the top of GitHub, click on your profile image.&lt;/li&gt;
+&lt;li&gt;Go to &amp;ldquo;Your repositories&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;New&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The repository name is essential here. Type here your GitHub URL. This is your nickname plus &amp;ldquo;.github.io&amp;rdquo; (&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;http://nickname.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;nickname.github.io&lt;/a&gt;)&lt;/em&gt;. Make this repository &amp;ldquo;Public&amp;rdquo; as well. Here, you do need a &amp;ldquo;README file&amp;rdquo;.
+&lt;img src=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/second-repository.png&#34;
+	width=&#34;634&#34;
+	height=&#34;401&#34;
+	srcset=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/second-repository_hu5765913f92eb030927179f5c94f78f9a_35442_480x0_resize_box_3.png 480w, https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/second-repository_hu5765913f92eb030927179f5c94f78f9a_35442_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Second Repository config&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;379px&#34;
+	
+&gt;
+&lt;em&gt;This second repository will soon contain your static website files.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Create repository&amp;rdquo;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-2-open-your-terminal-on-your-mac&#34;&gt;STEP 2: Open your Terminal on your Mac.&lt;/h2&gt;
+&lt;p&gt;For the installation, we will use your Terminal on your Mac. You open it in the following way.&lt;/p&gt;
+&lt;h3 id=&#34;open-terminal&#34;&gt;Open Terminal&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the spotlight with &amp;ldquo;Command + spacebar&amp;rdquo; on your Mac keyboard or click on the magnifying glass in the upper right corner.&lt;/li&gt;
+&lt;li&gt;In Spotlight, type &amp;ldquo;Terminal.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;When you see &amp;ldquo;Terminal&amp;rdquo; in the search results, open it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-3-install-xcode&#34;&gt;STEP 3: Install Xcode&lt;/h2&gt;
+&lt;p&gt;Xcode is a development environment (IDE) for developing software applications for iOS, iPadOS, macOS, WatchOS, tvOS, and above. It contains tools that allow developers to write, debug, and test software and tools for managing project files and resources. We need these to install Homebrew properly. So install this if you don&amp;rsquo;t already have it.&lt;/p&gt;
+&lt;h3 id=&#34;install-xcode&#34;&gt;Install Xcode&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You install Xcode with the following command in your Terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;xcode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;install&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Confirm that you want to install &amp;ldquo;Xcode&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Agree to a license agreement and wait for the installation process to complete. This can sometimes take a while. &lt;img src=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/x-code.png&#34;
+	width=&#34;559&#34;
+	height=&#34;242&#34;
+	srcset=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/x-code_hu8fa94242a69531a5bb61f0182e673600_44705_480x0_resize_box_3.png 480w, https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/x-code_hu8fa94242a69531a5bb61f0182e673600_44705_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Xcode&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;230&#34;
+		data-flex-basis=&#34;554px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-4-installing-homebrew&#34;&gt;STEP 4: Installing Homebrew&lt;/h2&gt;
+&lt;p&gt;Installing Homebrew is done with one command and that is the command below. Copy this command and paste it into your &amp;ldquo;Terminal&amp;rdquo; and press &amp;ldquo;Enter&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step-5-installing-hugo&#34;&gt;STEP 5: Installing Hugo&lt;/h2&gt;
+&lt;p&gt;Installing Hugo is incredibly easy and also done with one command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;brew&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step-6-create-hugo-site&#34;&gt;STEP 6: Create Hugo site&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create your Hugo website. Modify &lt;sitename&gt; to the name of your website.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;site&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sitename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the website directory.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sitenaam&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Turn your website into a repository.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;init&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Confirm the files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;commit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Add hugo site&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Between the brackets put a description as desired, e.g. &amp;ldquo;Add Hugo site&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Make sure you are on the &amp;ldquo;Main&amp;rdquo; branch.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;branch&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;M&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now link your first GitHub repository, (which you created earlier) to this repository.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;remote&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/&amp;lt;NickNaam&amp;gt;/&amp;lt;RepositoryNaam&amp;gt;.git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now push your repository to GitHub.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;push&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now all your files have been added to the first repository you created on Github. this may take a while but if you refresh it now you will see the files on Github.&lt;/p&gt;
+&lt;h2 id=&#34;step-7-install-hugo-theme-stack&#34;&gt;STEP 7: Install Hugo Theme Stack&lt;/h2&gt;
+&lt;p&gt;Now we are going to install the theme &amp;ldquo;Stack&amp;rdquo; from CaiJimmy. Do you want to know everything about this theme and alternative installation methods?  Please visit &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stack.jimmycai.com/&lt;/a&gt;. I will install the theme through a submodule.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Install the theme in your Hugo website&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;submodule&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now open your local website folder in an application such as Visual Studio Code. The folder can be found at the following path: MacHD/Users/username/websitename &lt;img src=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/website-folder.png&#34;
+	width=&#34;600&#34;
+	height=&#34;760&#34;
+	srcset=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/website-folder_hua0d5f4566de927700987a289b7214fea_78527_480x0_resize_box_3.png 480w, https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/website-folder_hua0d5f4566de927700987a289b7214fea_78527_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Website folder path&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;78&#34;
+		data-flex-basis=&#34;189px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now copy from the theme folder the sample file &amp;ldquo;config.yaml&amp;rdquo; and paste it into the root folder. This file can be found in the folder: themes/exampleSite/config.yaml &lt;img src=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/config-file.png&#34;
+	width=&#34;500&#34;
+	height=&#34;440&#34;
+	srcset=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/config-file_hud5538fe220f5ebb39f2a0c87d46b7b94_41471_480x0_resize_box_3.png 480w, https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/config-file_hud5538fe220f5ebb39f2a0c87d46b7b94_41471_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Copy config.yaml file&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;272px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Delete the file &amp;ldquo;config.toml&amp;rdquo; from the root folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the file &amp;ldquo;config.yaml&amp;rdquo;, modify the &amp;ldquo;baseURL&amp;rdquo; to your GitHub url of your second repository. &lt;img src=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/base-url.png&#34;
+	width=&#34;608&#34;
+	height=&#34;226&#34;
+	srcset=&#34;https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/base-url_hu2d024041c6151286741b28306b88a518_44161_480x0_resize_box_3.png 480w, https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/base-url_hu2d024041c6151286741b28306b88a518_44161_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Change Base URL&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;269&#34;
+		data-flex-basis=&#34;645px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go back to your Terminal and view your Web site with a local Web server using the following command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can now view your website locally at the address http://localhost:1313/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stop the local web server again with key combination &amp;ldquo;Ctrl+C”.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-8-put-your-website-live-on-github-pages&#34;&gt;STEP 8: Put your website live on GitHub pages.&lt;/h2&gt;
+&lt;p&gt;Now go put your website live on GitHub pages. Do this by pushing your website to your second repository you created earlier.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, add your second GitHub repository to your Hugo website by adding a two submodule in the &amp;ldquo;Public&amp;rdquo; folder.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-v&#34; data-lang=&#34;v&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;submodule&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/&amp;lt;NickNaam&amp;gt;/&amp;lt;RepositoryNaam&amp;gt;.git public
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;Note that your repository name of your second GitHub repository should be the URL of your GitHub pages.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now create your static website files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -t hugo-theme-stack
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the &amp;ldquo;Public&amp;rdquo; folder.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Confirm the files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;commit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;First upload&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now push your website to GitHub.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If all went well, all your files have now been pushed to your GitHub. These are now automatically deployed to your GitHub pages. Your site is now live and can be accessed at your GitHub URL. It may take a while for your website to deploy on GitHub.&lt;/p&gt;
+&lt;p&gt;You can now continue editing your website and create your first blog if you haven&amp;rsquo;t already. In the theme folder &amp;ldquo;exampleSite&amp;rdquo; under the folder &amp;ldquo;content&amp;rdquo; you will find some example blogs. If you would like to learn more about customizing the theme or the Hugo site? Please visit &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stack.jimmycai.com/&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You are always free to contact me. You can reach me at &lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/tom-bulte/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LinkedIn&lt;/a&gt; or you can send me an email, &lt;a class=&#34;link&#34; href=&#34;https://www.notion.so/TomAlexander-io-70f89f7744e8415caa5e01b5c66cef44?pvs=21&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hello@tomalexander.io&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>MY FIRST POST.</title>
         <link>https://tomalexander.io/p/hello-world/</link>
         <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>

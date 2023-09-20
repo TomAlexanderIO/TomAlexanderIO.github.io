@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Tom Alexander</title>
-        <link>https://tomalexander.io/post/</link>
-        <description>Recent content in Posts on Tom Alexander</description>
+        <title>Hugo on Tom Alexander</title>
+        <link>https://tomalexander.io/tags/hugo/</link>
+        <description>Recent content in Hugo on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Install Hugo website and host for free on GitHub-pages</title>
         <link>https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/</link>
         <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
@@ -390,20 +390,6 @@
 &lt;p&gt;You are always free to contact me. You can reach me at &lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/tom-bulte/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LinkedIn&lt;/a&gt; or you can send me an email, &lt;a class=&#34;link&#34; href=&#34;https://www.notion.so/TomAlexander-io-70f89f7744e8415caa5e01b5c66cef44?pvs=21&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hello@tomalexander.io&lt;/a&gt;.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>MY FIRST POST.</title>
-        <link>https://tomalexander.io/p/hello-world/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://tomalexander.io/p/hello-world/</guid>
-        <description>&lt;img src="https://tomalexander.io/p/hello-world/hello-world.png" alt="Featured image of post MY FIRST POST." /&gt;&lt;h1 id=&#34;hello-world&#34;&gt;Hello world.&lt;/h1&gt;
-&lt;p&gt;In an increasingly fast world, sometimes it&amp;rsquo;s good to think back to the first small step because that&amp;rsquo;s where it all starts, and from there, you can always move forward.&lt;/p&gt;
-&lt;p&gt;I am Tom Alexander Bulté, an Online Marketing specialist living in Zwolle, the Netherlands. Being practical and willing to try things is who I am. Wanting to do or be able to do things right the first time is also my biggest challenge, which sometimes causes fear of failure.&lt;/p&gt;
-&lt;p&gt;I started this personal website to share some of my notes with the world for those who find it interesting and for those who can learn something from it. Topics I want to share with you here are personal stories, travel stories, hobby projects, smart home projects, development projects, and who knows what more. A lot of self-learning projects ⚙️&lt;/p&gt;
-&lt;p&gt;My ideas and elaboration will surely not always be perfect. You may know a better way. No problem and I like to learn from you. Feel free to comment 🙏🏻&lt;/p&gt;
-&lt;p&gt;Thank you.&lt;/p&gt;
 </description>
         </item>
         

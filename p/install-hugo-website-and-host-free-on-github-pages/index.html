@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='In this article, I&#39;ll take you through how I installed Hugo on macOS and published it for free on GitHub.'>
+<title>Install Hugo website and host for free on GitHub-pages</title>
+
+<link rel='canonical' href='https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/'>
+
+<link rel="stylesheet" href="/scss/style.min.f2f21d9d961219a01621263328d8997e1ae3b4f0371d455628df1fdc27d57bd6.css"><meta property='og:title' content='Install Hugo website and host for free on GitHub-pages'>
+<meta property='og:description' content='In this article, I&#39;ll take you through how I installed Hugo on macOS and published it for free on GitHub.'>
+<meta property='og:url' content='https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/'>
+<meta property='og:site_name' content='Tom Alexander'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='webdevelopment' /><meta property='article:tag' content='Hugo' /><meta property='article:tag' content='GitHub' /><meta property='article:published_time' content='2023-09-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-09-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/install-hugo-and-host-on-github.png' />
+<meta name="twitter:title" content="Install Hugo website and host for free on GitHub-pages">
+<meta name="twitter:description" content="In this article, I&#39;ll take you through how I installed Hugo on macOS and published it for free on GitHub."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/assets/install-hugo-and-host-on-github.png' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8B8J6FVB8S"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-8B8J6FVB8S', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/me_hue8f6f33071898d4bf98f1fd18f80342d_87373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Tom Alexander</a></h1>
+            <h2 class="site-description">Just a place to brain dump my personal notes and tips 🤗</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/TomAlexanderIO'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about-me/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About me</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archive/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archive</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://tomalexander.io/" selected>English</option>
+                        
+                            <option value="https://tomalexander.io/nl/" >Dutch</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#lets-go">Let&rsquo;s Go</a></li>
+    <li><a href="#step-1-create-two-github-repositories">STEP 1: Create two GitHub repositories.</a>
+      <ol>
+        <li><a href="#create-1st-repository">Create 1st Repository</a></li>
+        <li><a href="#create-2nd-repository">Create 2nd Repository</a></li>
+      </ol>
+    </li>
+    <li><a href="#step-2-open-your-terminal-on-your-mac">STEP 2: Open your Terminal on your Mac.</a>
+      <ol>
+        <li><a href="#open-terminal">Open Terminal</a></li>
+      </ol>
+    </li>
+    <li><a href="#step-3-install-xcode">STEP 3: Install Xcode</a>
+      <ol>
+        <li><a href="#install-xcode">Install Xcode</a></li>
+      </ol>
+    </li>
+    <li><a href="#step-4-installing-homebrew">STEP 4: Installing Homebrew</a></li>
+    <li><a href="#step-5-installing-hugo">STEP 5: Installing Hugo</a></li>
+    <li><a href="#step-6-create-hugo-site">STEP 6: Create Hugo site</a></li>
+    <li><a href="#step-7-install-hugo-theme-stack">STEP 7: Install Hugo Theme Stack</a></li>
+    <li><a href="#step-8-put-your-website-live-on-github-pages">STEP 8: Put your website live on GitHub pages.</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/install-hugo-website-and-host-free-on-github-pages/">
+                <img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/install-hugo-and-host-on-github_hu6307efc0858486a5de5b989517dd8cf7_613766_800x0_resize_box_3.png"
+                        srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/install-hugo-and-host-on-github_hu6307efc0858486a5de5b989517dd8cf7_613766_800x0_resize_box_3.png 800w, /p/install-hugo-website-and-host-free-on-github-pages/assets/install-hugo-and-host-on-github_hu6307efc0858486a5de5b989517dd8cf7_613766_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="333" 
+                        loading="lazy"
+                        alt="Featured image of post Install Hugo website and host for free on GitHub-pages" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/development/" style="background-color: #2a9d8f; color: #fff;">
+                Development &lt;/&gt;
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/install-hugo-website-and-host-free-on-github-pages/">Install Hugo website and host for free on GitHub-pages</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            In this article, I&#39;ll take you through how I installed Hugo on macOS and published it for free on GitHub.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 20, 2023</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="build-easily-and-quickly-your-own-hugo-website-on-macos-and-host-it-for-free-on-github-pages">Build easily and quickly your own HUGO website on macOS and host it for free on GitHub pages.</h1>
+<p>Hugo is an open-source website generator for static websites. Often, for a small website, you do not need a complex infrastructure with a front-end, back-end, and database (e.g., WordPress).</p>
+<p>In this article, I&rsquo;ll take you through how I installed Hugo on macOS and published it for free on GitHub. Want to know more about Hugo and other installation options? Then visit <a class="link" href="https://gohugo.io/installation/"  target="_blank" rel="noopener"
+    >https://gohugo.io/installation/</a>. In addition to installing Hugo, I will also tell you how to install the Hugo Theme Stack by Jimmy Cai.</p>
+<h2 id="lets-go">Let&rsquo;s Go</h2>
+<p>Installing Hugo on macOS is done with Homebrew. This is a package manager for MacOS or Linux. Want to know more about Homebrew? Visit <a class="link" href="https://brew.sh/"  target="_blank" rel="noopener"
+    >https://brew.sh/</a></p>
+<h2 id="step-1-create-two-github-repositories">STEP 1: Create two GitHub repositories.</h2>
+<p>Go to your GitHub account and create two repositories there. If you don&rsquo;t have an account on GitHub yet, make one on <a class="link" href="http://github.com/"  target="_blank" rel="noopener"
+    >GitHub.com</a>.</p>
+<h3 id="create-1st-repository">Create 1st Repository</h3>
+<ol>
+<li>Right at the top of GitHub, click on your profile image.</li>
+<li>Go to &ldquo;Your repositories&rdquo;</li>
+<li>Click on &ldquo;New&rdquo;.</li>
+<li>Create your first repository and name it. Make your repository &ldquo;Public&rdquo;. You do not need a &ldquo;README file&rdquo;.
+<img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/first-repository.png"
+	width="702"
+	height="406"
+	srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/first-repository_hu87fc2e1b60b8a5732c7f79072f2dabb4_35237_480x0_resize_box_3.png 480w, /p/install-hugo-website-and-host-free-on-github-pages/assets/first-repository_hu87fc2e1b60b8a5732c7f79072f2dabb4_35237_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="First Repository config"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="172"
+		data-flex-basis="414px"
+	
+>
+<em>This first repository will contain all your Hugo files to maintain the website.</em></li>
+<li>Click &ldquo;Create repository”.</li>
+</ol>
+<h3 id="create-2nd-repository">Create 2nd Repository</h3>
+<ol>
+<li>Right at the top of GitHub, click on your profile image.</li>
+<li>Go to &ldquo;Your repositories&rdquo;</li>
+<li>Click on &ldquo;New&rdquo;.</li>
+<li>The repository name is essential here. Type here your GitHub URL. This is your nickname plus &ldquo;.github.io&rdquo; (<em><a class="link" href="http://nickname.github.io/"  target="_blank" rel="noopener"
+    >nickname.github.io</a>)</em>. Make this repository &ldquo;Public&rdquo; as well. Here, you do need a &ldquo;README file&rdquo;.
+<img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/second-repository.png"
+	width="634"
+	height="401"
+	srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/second-repository_hu5765913f92eb030927179f5c94f78f9a_35442_480x0_resize_box_3.png 480w, /p/install-hugo-website-and-host-free-on-github-pages/assets/second-repository_hu5765913f92eb030927179f5c94f78f9a_35442_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Second Repository config"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="379px"
+	
+>
+<em>This second repository will soon contain your static website files.</em></li>
+<li>Click &ldquo;Create repository&rdquo;.</li>
+</ol>
+<h2 id="step-2-open-your-terminal-on-your-mac">STEP 2: Open your Terminal on your Mac.</h2>
+<p>For the installation, we will use your Terminal on your Mac. You open it in the following way.</p>
+<h3 id="open-terminal">Open Terminal</h3>
+<ol>
+<li>Open the spotlight with &ldquo;Command + spacebar&rdquo; on your Mac keyboard or click on the magnifying glass in the upper right corner.</li>
+<li>In Spotlight, type &ldquo;Terminal.&rdquo;</li>
+<li>When you see &ldquo;Terminal&rdquo; in the search results, open it.</li>
+</ol>
+<h2 id="step-3-install-xcode">STEP 3: Install Xcode</h2>
+<p>Xcode is a development environment (IDE) for developing software applications for iOS, iPadOS, macOS, WatchOS, tvOS, and above. It contains tools that allow developers to write, debug, and test software and tools for managing project files and resources. We need these to install Homebrew properly. So install this if you don&rsquo;t already have it.</p>
+<h3 id="install-xcode">Install Xcode</h3>
+<ol>
+<li>
+<p>You install Xcode with the following command in your Terminal.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">xcode</span><span class="o">-</span><span class="nx">select</span> <span class="o">--</span><span class="nx">install</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Confirm that you want to install &ldquo;Xcode&rdquo;</p>
+</li>
+<li>
+<p>Agree to a license agreement and wait for the installation process to complete. This can sometimes take a while. <img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/x-code.png"
+	width="559"
+	height="242"
+	srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/x-code_hu8fa94242a69531a5bb61f0182e673600_44705_480x0_resize_box_3.png 480w, /p/install-hugo-website-and-host-free-on-github-pages/assets/x-code_hu8fa94242a69531a5bb61f0182e673600_44705_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Xcode"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="230"
+		data-flex-basis="554px"
+	
+></p>
+</li>
+</ol>
+<h2 id="step-4-installing-homebrew">STEP 4: Installing Homebrew</h2>
+<p>Installing Homebrew is done with one command and that is the command below. Copy this command and paste it into your &ldquo;Terminal&rdquo; and press &ldquo;Enter&rdquo;.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="err">/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="step-5-installing-hugo">STEP 5: Installing Hugo</h2>
+<p>Installing Hugo is incredibly easy and also done with one command.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">brew</span> <span class="nx">install</span> <span class="nx">hugo</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="step-6-create-hugo-site">STEP 6: Create Hugo site</h2>
+<ol>
+<li>
+<p>Create your Hugo website. Modify <sitename> to the name of your website.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="k">new</span> <span class="nx">site</span> <span class="p">&lt;</span><span class="nt">sitename</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Go to the website directory.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">cd</span> <span class="p">&lt;</span><span class="nt">sitenaam</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Turn your website into a repository.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">init</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Add the files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">add</span> <span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Confirm the files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">&#34;Add hugo site&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p><em>Between the brackets put a description as desired, e.g. &ldquo;Add Hugo site&rdquo;.</em></p>
+<ol start="6">
+<li>
+<p>Make sure you are on the &ldquo;Main&rdquo; branch.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">branch</span> <span class="o">-</span><span class="nx">M</span> <span class="nx">main</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Now link your first GitHub repository, (which you created earlier) to this repository.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">remote</span> <span class="nx">add</span> <span class="nx">origin</span> <span class="nx">https</span><span class="o">:</span><span class="c1">//github.com/&lt;NickNaam&gt;/&lt;RepositoryNaam&gt;.git
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Now push your repository to GitHub.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">push</span> <span class="o">-</span><span class="nx">u</span> <span class="nx">origin</span> <span class="nx">main</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>Now all your files have been added to the first repository you created on Github. this may take a while but if you refresh it now you will see the files on Github.</p>
+<h2 id="step-7-install-hugo-theme-stack">STEP 7: Install Hugo Theme Stack</h2>
+<p>Now we are going to install the theme &ldquo;Stack&rdquo; from CaiJimmy. Do you want to know everything about this theme and alternative installation methods?  Please visit <a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
+    >https://stack.jimmycai.com/</a>. I will install the theme through a submodule.</p>
+<ol>
+<li>
+<p>Install the theme in your Hugo website</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">submodule</span> <span class="nx">add</span> <span class="nx">https</span><span class="o">:</span><span class="c1">//github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Now open your local website folder in an application such as Visual Studio Code. The folder can be found at the following path: MacHD/Users/username/websitename <img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/website-folder.png"
+	width="600"
+	height="760"
+	srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/website-folder_hua0d5f4566de927700987a289b7214fea_78527_480x0_resize_box_3.png 480w, /p/install-hugo-website-and-host-free-on-github-pages/assets/website-folder_hua0d5f4566de927700987a289b7214fea_78527_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Website folder path"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="78"
+		data-flex-basis="189px"
+	
+></p>
+</li>
+<li>
+<p>Now copy from the theme folder the sample file &ldquo;config.yaml&rdquo; and paste it into the root folder. This file can be found in the folder: themes/exampleSite/config.yaml <img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/config-file.png"
+	width="500"
+	height="440"
+	srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/config-file_hud5538fe220f5ebb39f2a0c87d46b7b94_41471_480x0_resize_box_3.png 480w, /p/install-hugo-website-and-host-free-on-github-pages/assets/config-file_hud5538fe220f5ebb39f2a0c87d46b7b94_41471_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Copy config.yaml file"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="113"
+		data-flex-basis="272px"
+	
+></p>
+</li>
+<li>
+<p>Delete the file &ldquo;config.toml&rdquo; from the root folder.</p>
+</li>
+<li>
+<p>In the file &ldquo;config.yaml&rdquo;, modify the &ldquo;baseURL&rdquo; to your GitHub url of your second repository. <img src="/p/install-hugo-website-and-host-free-on-github-pages/assets/base-url.png"
+	width="608"
+	height="226"
+	srcset="/p/install-hugo-website-and-host-free-on-github-pages/assets/base-url_hu2d024041c6151286741b28306b88a518_44161_480x0_resize_box_3.png 480w, /p/install-hugo-website-and-host-free-on-github-pages/assets/base-url_hu2d024041c6151286741b28306b88a518_44161_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="Change Base URL"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="269"
+		data-flex-basis="645px"
+	
+></p>
+</li>
+<li>
+<p>Go back to your Terminal and view your Web site with a local Web server using the following command.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>You can now view your website locally at the address http://localhost:1313/</p>
+</li>
+<li>
+<p>Stop the local web server again with key combination &ldquo;Ctrl+C”.</p>
+</li>
+</ol>
+<h2 id="step-8-put-your-website-live-on-github-pages">STEP 8: Put your website live on GitHub pages.</h2>
+<p>Now go put your website live on GitHub pages. Do this by pushing your website to your second repository you created earlier.</p>
+<ol>
+<li>
+<p>First, add your second GitHub repository to your Hugo website by adding a two submodule in the &ldquo;Public&rdquo; folder.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-v" data-lang="v"><span class="line"><span class="cl"><span class="nv">git</span> <span class="nv">submodule</span> <span class="nv">add</span> <span class="nv">https</span><span class="p">:</span><span class="c1">//github.com/&lt;NickNaam&gt;/&lt;RepositoryNaam&gt;.git public
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>Note that your repository name of your second GitHub repository should be the URL of your GitHub pages.</em></p>
+</li>
+<li>
+<p>Now create your static website files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo -t hugo-theme-stack
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Go to the &ldquo;Public&rdquo; folder.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Add the files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">add</span> <span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Confirm the files.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="s2">&#34;First upload&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Now push your website to GitHub.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<p>If all went well, all your files have now been pushed to your GitHub. These are now automatically deployed to your GitHub pages. Your site is now live and can be accessed at your GitHub URL. It may take a while for your website to deploy on GitHub.</p>
+<p>You can now continue editing your website and create your first blog if you haven&rsquo;t already. In the theme folder &ldquo;exampleSite&rdquo; under the folder &ldquo;content&rdquo; you will find some example blogs. If you would like to learn more about customizing the theme or the Hugo site? Please visit <a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
+    >https://stack.jimmycai.com/</a> or <a class="link" href="https://gohugo.io/"  target="_blank" rel="noopener"
+    >https://gohugo.io/</a></p>
+<p>You are always free to contact me. You can reach me at <a class="link" href="https://www.linkedin.com/in/tom-bulte/"  target="_blank" rel="noopener"
+    >LinkedIn</a> or you can send me an email, <a class="link" href="https://www.notion.so/TomAlexander-io-70f89f7744e8415caa5e01b5c66cef44?pvs=21"  target="_blank" rel="noopener"
+    >hello@tomalexander.io</a>.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/webdevelopment/">webdevelopment</a>
+        
+            <a href="/tags/hugo/">Hugo</a>
+        
+            <a href="/tags/github/">GitHub</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Tom Alexander
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.19.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
