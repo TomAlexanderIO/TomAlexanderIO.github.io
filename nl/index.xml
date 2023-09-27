@@ -7,7 +7,399 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>nl</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/nl/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/nl/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Installeer Hugo website en publiceer deze gratis op GitHub-pages</title>
+        <link>https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/</link>
+        <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/</guid>
+        <description>&lt;img src="https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/install-hugo-and-host-on-github.png" alt="Featured image of post Installeer Hugo website en publiceer deze gratis op GitHub-pages" /&gt;&lt;h1 id=&#34;maak-gemakkelijk-en-snel-je-eigen-hugo-website-op-macos-en-hoost-deze-gratis-op-github-pages&#34;&gt;Maak gemakkelijk en snel je eigen HUGO website op MacOS en hoost deze gratis op GitHub-pages.&lt;/h1&gt;
+&lt;p&gt;Hugo is een open-source website generator voor statisch website’s. Vaak heb je voor een kleine website’s helemaal niet een hele complexe website infrastructuur nodig met een front-end, back-end en database (bijv. WordPress).&lt;/p&gt;
+&lt;p&gt;In dit artikel neem ik je mee hoe ik Hugo heb geïnstalleerd op MacOS en deze gratis publiceer op GitHub. Wil je meer weten van Hugo en andere installatie mogelijkheden? Kijk dan op &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/installation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/installation/&lt;/a&gt; Naast de installatie van Hugo vertel ik je ook hoe je het Hugo Theme Stack installeert van Jimmy Cai.&lt;/p&gt;
+&lt;h2 id=&#34;lets-go&#34;&gt;Let&amp;rsquo;s Go&lt;/h2&gt;
+&lt;p&gt;De installatie van Hugo op MacOS doe je met Homebrew. Dit is een pakket manager voor MacOS of Linux. Wil je meer weten van Homebrew? Kijk dan op &lt;a class=&#34;link&#34; href=&#34;https://brew.sh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://brew.sh/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;stap-1-maar-twee-github-repositories-aan&#34;&gt;STAP 1: Maar twee GitHub repositories aan.&lt;/h2&gt;
+&lt;p&gt;Ga naar je GitHub account en maak daar twee repositories aan. Heb je nog geen account op GitHub maak die dan aan op GitHub.com.&lt;/p&gt;
+&lt;h3 id=&#34;1e-repository-aanmaken&#34;&gt;1e Repository aanmaken&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;Klik recht boven in GitHub op je profiel afbeelding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Ga naar “Your repositories”&lt;/li&gt;
+&lt;li&gt;Klik op “New”&lt;/li&gt;
+&lt;li&gt;Maak je eerste repository aan en geef deze een naam. Maak je repository “Public”. Je hebt geen “README file” nodig.
+&lt;img src=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/first-repository.png&#34;
+	width=&#34;702&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/first-repository_hu87fc2e1b60b8a5732c7f79072f2dabb4_35237_480x0_resize_box_3.png 480w, https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/first-repository_hu87fc2e1b60b8a5732c7f79072f2dabb4_35237_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;First Repository config&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;414px&#34;
+	
+&gt;
+&lt;em&gt;Deze eerste repository bevat straks al je Hugo bestanden om de website te kunnen onderhouden.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Klik op “Create repository”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2e-repository-aanmaken&#34;&gt;2e Repository aanmaken&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;Klik recht boven in GitHub op je profiel afbeelding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Ga naar “Your repositories”&lt;/li&gt;
+&lt;li&gt;Klik op “New”&lt;/li&gt;
+&lt;li&gt;De naam van de repository is hier belangrijk. Typr hier je GitHub URL. Dit is je nickname plus &amp;ldquo;.github.io&amp;rdquo; (&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;http://nickname.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;nickname.github.io&lt;/a&gt;)&lt;/em&gt;. Maak deze repository ook “Public”. Hier heb je wel een “README file” nodig.
+&lt;img src=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/second-repository.png&#34;
+	width=&#34;634&#34;
+	height=&#34;401&#34;
+	srcset=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/second-repository_hu5765913f92eb030927179f5c94f78f9a_35442_480x0_resize_box_3.png 480w, https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/second-repository_hu5765913f92eb030927179f5c94f78f9a_35442_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Second Repository config&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;379px&#34;
+	
+&gt;
+&lt;em&gt;Deze tweede repository bevat straks je statische website bestanden.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Klik op “Create repository”.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;stap-2-open-je-terminal-op-je-mac&#34;&gt;STAP 2: Open je Terminal op je Mac.&lt;/h2&gt;
+&lt;p&gt;Voor de installatie maken we gebruik van je Terminal op je Mac. Deze open je op de volgende manier.&lt;/p&gt;
+&lt;h3 id=&#34;open-terminal&#34;&gt;Open Terminal&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open spotlight met “Command + spatiebalk“ op je Mac toetsenbord of klik rechts boven in op het vergrootglas.&lt;/li&gt;
+&lt;li&gt;Typ in Spotlight “Terminal”&lt;/li&gt;
+&lt;li&gt;Wanneer je “Terminal” ziet in de zoekresultaten, open je deze.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;stap-3-xcode-installeren&#34;&gt;STAP 3: Xcode installeren&lt;/h2&gt;
+&lt;p&gt;Xcode is een ontwikkelomgeving (IDE) voor het ontwikkelen van softwaretoepassingen voor iOS, iPadOS, macOS, WatchOS, tvOS en hoger. Het bevat een reeks tools waarmee ontwikkelaars software kunnen schrijven, debuggen en testen, en tools voor het beheren van projectbestanden en bronnen. Dit hebben we nodig om Homebrew goed te kunnen installeren. Dus installeer deze voor als je dit nog niet hebt.&lt;/p&gt;
+&lt;h3 id=&#34;installeer-xcode&#34;&gt;Installeer Xcode&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Xcode installeer je met de volgende command in je Terminal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;xcode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;install&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bevestig dat je “Xcode” wilt installeren&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ga akkoord met een licentieovereenkomst en wacht tot het installatieproces is voltooid. Dit kan soms even duren. &lt;img src=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/x-code.png&#34;
+	width=&#34;559&#34;
+	height=&#34;242&#34;
+	srcset=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/x-code_hu8fa94242a69531a5bb61f0182e673600_44705_480x0_resize_box_3.png 480w, https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/x-code_hu8fa94242a69531a5bb61f0182e673600_44705_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Xcode&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;230&#34;
+		data-flex-basis=&#34;554px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;stap-4-homebrew-installeren&#34;&gt;STAP 4: Homebrew installeren&lt;/h2&gt;
+&lt;p&gt;Homebrem installeren doe je met één command en dat is onderstaande command. Kopieer dit command en plak deze in je “Terminal” en druk op “Enter”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;stap-5-hugo-installeren&#34;&gt;STAP 5: Hugo installeren&lt;/h2&gt;
+&lt;p&gt;Hugo installeren gaat ontzetten makkelijk en doe je ook met één command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;brew&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;stap-6-hugo-site-aanmaken&#34;&gt;STAP 6: Hugo site aanmaken&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Maak je Hugo website aan. &lt;sitenaam&gt; aanpassen naar de naam van je website.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;site&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sitename&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ga naar de website map.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sitenaam&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Maak van je website een repository.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;init&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voeg de bestanden toe.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bevestig de bestanden.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;commit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Add hugo site&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Tussen de haakjes zet je een omschrijven naar wens, bijv “Add Hugo site”.&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Zorg er voor dat je op de “Main” branch zit.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;branch&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;M&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Koppel nu je eerste GitHub repository, (die je eerder hebt gemaakt) aan deze repository.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;remote&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/&amp;lt;NickNaam&amp;gt;/&amp;lt;RepositoryNaam&amp;gt;.git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push nu je repository naar GitHub&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;push&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;u&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nu zijn al je bestanden toegevoegd aan de eerste repository die je hebt aangemaakt op Github. dit kan even duren maar als je deze nu vernieuwd zie je de bestanden op Github.&lt;/p&gt;
+&lt;h2 id=&#34;stap-7-hugo-theme-stack-installeren&#34;&gt;STAP 7: Hugo Theme Stack installeren&lt;/h2&gt;
+&lt;p&gt;Nu gaan we het theme “Stack” installeren van CaiJimmy. Wil je alles over dit theme weten en alternative installatie methoden?  Kijk dan op &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stack.jimmycai.com/&lt;/a&gt; De installatie van het theme doen ik middels een submodule.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Installeer het theme in je Hugo website&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;submodule&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open je lokale website folder nu in een programma zoals Visual Studio Code. De folder is terug te vinden op het volgende path: MacHD/Gebruikers/&lt;gebruikernaam&gt;/&lt;websitenaam&gt; &lt;img src=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/website-folder.png&#34;
+	width=&#34;600&#34;
+	height=&#34;760&#34;
+	srcset=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/website-folder_hua0d5f4566de927700987a289b7214fea_78527_480x0_resize_box_3.png 480w, https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/website-folder_hua0d5f4566de927700987a289b7214fea_78527_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Website folder path&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;78&#34;
+		data-flex-basis=&#34;189px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kopieer nu uit de theme map het voorbeeld bestand “config.yaml” en plak deze in de hoofdmap. Dit bestand is te vinden in de map: themes/exampleSite/config.yaml &lt;img src=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/config-file.png&#34;
+	width=&#34;500&#34;
+	height=&#34;440&#34;
+	srcset=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/config-file_hud5538fe220f5ebb39f2a0c87d46b7b94_41471_480x0_resize_box_3.png 480w, https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/config-file_hud5538fe220f5ebb39f2a0c87d46b7b94_41471_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Copy config.yaml file&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;272px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verwijder het bestand “config.toml” uit de hoofd map.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pas in het bestabd “config.yaml” de “baseURL” aan naar je GitHub url van je tweede repository. &lt;img src=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/base-url.png&#34;
+	width=&#34;608&#34;
+	height=&#34;226&#34;
+	srcset=&#34;https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/base-url_hu2d024041c6151286741b28306b88a518_44161_480x0_resize_box_3.png 480w, https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/assets/base-url_hu2d024041c6151286741b28306b88a518_44161_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Change Base URL&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;269&#34;
+		data-flex-basis=&#34;645px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ga weer terug naar je Terminal en bekijk je website met een lokale webserver met het volgende command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Je kan nu je website lokaal bekijken op het adres http://localhost:1313/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stop de lokale webserver weer met toetsencombinatie “Ctrl+C”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;stap-8-zet-je-website-live-op-github-pages&#34;&gt;STAP 8: Zet je website live op GitHub-pages&lt;/h2&gt;
+&lt;p&gt;Ga nu je website live zetten op GitHub-pages. Dit doen door je website te pushen naar je twee repository die je eerder hebt aangemaakt.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Voeg eerst je tweede GitHub repository toe aan je Hugo website door een twee submodule toe te voegen in de map “ Public”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-v&#34; data-lang=&#34;v&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;submodule&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/&amp;lt;NickNaam&amp;gt;/&amp;lt;RepositoryNaam&amp;gt;.git public
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;em&gt;Letop, je repository naam van je tweede GitHub repository moet de URL van je GitHub-pages zijn.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Maak nu je statische website bestanden aan.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -t hugo-theme-stack
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ga naar de map “ Public”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd public
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voeg de bestanden toe.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bevestig de bestanden.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;commit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;First upload&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Push nu je website naar GitHub.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Als alles is goed gegaan zijn nu al je bestanden naar je GitHub gepushed. Deze worden nu automatisch deployed naar je GitHub-pages. Je website staat nu live en is te benaderen op je GitHub URL. Het kan even voor je website is deployed op GitHub.&lt;/p&gt;
+&lt;p&gt;Ja kan nu verder met het bewerken van je website en je eerste blog aanmaken als je dat nog niet hebt gedaan. In de theme map “exampleSite” staat onder de map “content” een aantal voorbeeld blogs. Mocht je meer wil weten over het aanpassen van het thema of de Hugo site? Kijk dan op &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://stack.jimmycai.com/&lt;/a&gt; of op &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gohugo.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Het staat je ook altijd vrij om mij te contacten. Je kan mij bereiken via &lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/tom-bulte/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LinkedIn&lt;/a&gt; of je kan mij een mail sturen, &lt;a class=&#34;link&#34; href=&#34;https://www.notion.so/TomAlexander-io-70f89f7744e8415caa5e01b5c66cef44?pvs=21&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hello@tomalexander.io&lt;/a&gt;.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>MIJN EERSTE BERICHT.</title>
         <link>https://tomalexander.io/nl/p/hallo-wereld/</link>
         <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>

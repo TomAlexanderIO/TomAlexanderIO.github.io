@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tomalexander.io/nl/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://tomalexander.io/nl/categories/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,6 +26,97 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://tomalexander.io/nl/categories/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/categories/development/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/categories/development/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/tags/github/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/tags/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/tags/github/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/tags/hugo/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/tags/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/tags/hugo/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/p/install-hugo-website-and-host-free-on-github-pages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/post/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/post/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/tags/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/tags/"
+                />
+  </url><url>
+    <loc>https://tomalexander.io/nl/tags/webdevelopment/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomalexander.io/tags/webdevelopment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://tomalexander.io/nl/tags/webdevelopment/"
                 />
   </url><url>
     <loc>https://tomalexander.io/nl/p/hallo-wereld/</loc>
@@ -55,32 +146,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://tomalexander.io/nl/categories/personal/"
-                />
-  </url><url>
-    <loc>https://tomalexander.io/nl/post/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/post/"
-                />
-  </url><url>
-    <loc>https://tomalexander.io/nl/tags/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/tags/"
                 />
   </url><url>
     <loc>https://tomalexander.io/nl/over-mij/</loc>
@@ -120,18 +185,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://tomalexander.io/nl/archief/"
-                />
-  </url><url>
-    <loc>https://tomalexander.io/nl/categories/development/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomalexander.io/categories/development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://tomalexander.io/nl/categories/development/"
                 />
   </url><url>
     <loc>https://tomalexander.io/nl/links/</loc>

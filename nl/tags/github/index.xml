@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Tom Alexander</title>
-        <link>https://tomalexander.io/nl/post/</link>
-        <description>Recent content in Posts on Tom Alexander</description>
+        <title>GitHub on Tom Alexander</title>
+        <link>https://tomalexander.io/nl/tags/github/</link>
+        <description>Recent content in GitHub on Tom Alexander</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>nl</language>
         <copyright>Tom Alexander</copyright>
-        <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/nl/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 27 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tomalexander.io/nl/tags/github/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Installeer Hugo website en publiceer deze gratis op GitHub-pages</title>
         <link>https://tomalexander.io/nl/p/installeer-hugo-website-en-publiceer-deze-gratis-op-github-pages/</link>
         <pubDate>Wed, 27 Sep 2023 00:00:00 +0000</pubDate>
@@ -397,20 +397,6 @@
 &lt;p&gt;Het staat je ook altijd vrij om mij te contacten. Je kan mij bereiken via &lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/tom-bulte/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LinkedIn&lt;/a&gt; of je kan mij een mail sturen, &lt;a class=&#34;link&#34; href=&#34;https://www.notion.so/TomAlexander-io-70f89f7744e8415caa5e01b5c66cef44?pvs=21&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hello@tomalexander.io&lt;/a&gt;.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>MIJN EERSTE BERICHT.</title>
-        <link>https://tomalexander.io/nl/p/hallo-wereld/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://tomalexander.io/nl/p/hallo-wereld/</guid>
-        <description>&lt;img src="https://tomalexander.io/nl/p/hallo-wereld/hallo-wereld.png" alt="Featured image of post MIJN EERSTE BERICHT." /&gt;&lt;h1 id=&#34;hallo-wereld&#34;&gt;Hallo wereld.&lt;/h1&gt;
-&lt;p&gt;In een wereld die steeds sneller gaat, is het soms goed om terug te denken aan de eerste kleine stap, want daar begint het en vanuit daar kun je altijd weer verder komen.&lt;/p&gt;
-&lt;p&gt;Mijn naam is Tom Alexander Bulté en ben een Online Marketing specialist, woonachtig is Zwolle. Praktisch zijn en de wil om dingen te proberen is wie ik ben. De dingen dan in één keer goed willen doen of kunnen is ook direct mijn grootste uitdaging waardoor er soms de angst is om te falen.&lt;/p&gt;
-&lt;p&gt;Deze persoonlijke website ben ik gestart om een aantal van mijn notities te delen met de wereld, voor wie dat interessant vind en voor wie er iets van kan leren. Onderwerpen die ik hier met jou wil delen zijn; persoonlijke verhalen, marketing onderwerpen, reisverhalen, hobby projecten, smart home projecten, development projecten en wie weet wat meer. Veel zelfstudie projectjes ⚙️&lt;/p&gt;
-&lt;p&gt;Mijn ideeën en uitwerking zullen vast niet altijd perfect zijn, een ander zal mogelijk vast een betere manier weten?geen probleem en ik leer er graag van. Voel je vrij om te reageren 🙏🏻&lt;/p&gt;
-&lt;p&gt;Bedankt.&lt;/p&gt;
 </description>
         </item>
         
